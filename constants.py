@@ -13,4 +13,4 @@ phaseOffsetFrontLeg = pi/4
 runTime = 1000
 length = 1000
 gravity = -9.8
-timeSleep = 1/60
+time = 1/60

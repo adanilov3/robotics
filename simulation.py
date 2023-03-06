@@ -21,8 +21,10 @@ class SIMULATION:
         p.disconnect()
 
     def Run(self):
-        for x in range(c.runTime):
+        for x in range(0, c.runTime):
             p.stepSimulation()
+            time.sleep(c.time)
             self.robot.Sense(x)
-            self.robot.Act(x, self.robot)
-            time.sleep(c.timeSleep)
+            self.robot.Think()
+            self.robot.Act(x)
+        p.disconnect()
